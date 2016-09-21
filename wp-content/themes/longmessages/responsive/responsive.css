@@ -1,0 +1,634 @@
+/* Responsive layout.
+================================================== */
+
+
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	
+	@media only screen and (max-width: 1023px) {
+		.pagehead {
+			width: auto;
+			padding-right: 15px;
+		}
+		.canrgt .imaborder img {
+			max-width: 100%;
+		}
+		.backtotop {
+			left: auto;
+		}
+		.single_guide {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.single_guide_video {
+			box-sizing: border-box;
+		}
+	}
+	/* Retain two columns layout */
+	@media only screen and (min-width: 769px) and (max-width: 870px) {
+		.canrgt {
+			width: 80%;
+			padding-right: 15px;
+		}
+		.canrgt .fl, .canrgt .fr {
+			float: none;
+		}
+
+		.single_guide iframe, .single_guide object, .single_guide embed, .single_guide video{
+			height: 400px !important;
+		}
+		.single_guide_video{
+			background-position: center 400px;
+		}
+	}
+
+	/* Fluid layout between 786 and 1024 */
+	@media only screen and (min-width: 769px) and (max-width: 1023px) {
+		/* General
+		================================================== */
+		html {
+			overflow-x: hidden !important;
+		}
+		.wrapper {
+			width: 100%;
+		}
+		#main {
+			min-width: 0;
+			width: 100%;
+		}
+		/* Header
+		================================================== */
+		.header {
+			height: 100px;
+		}
+		.wrapper_fixed {
+			height: 100px;
+		}
+
+		.header .logo {
+			display: block;
+			margin: 15px;
+			padding: 0;
+		}
+		.header .nav {
+			margin-right: 10px;
+			margin: 0;
+			float: none;
+			padding: 30px;
+		}
+		.header .fl {
+			display: block;
+			margin: 15px;
+		}
+		.header .logoarrow {
+			display: none;
+		}
+		
+		/* Homepage intro
+		================================================== */
+		.slidermain {
+			width: 100%;
+		}
+		.slidermain .fl {
+			float: none;
+			text-align: center;
+		}
+		.slidermain .box {
+			max-width: 100%;
+		}
+		.slidermain #home_video_box {
+			width: 60%;
+		}
+		.slidermain .popupform {
+			width: 35%;
+		}
+		.sldrtxtbox {
+			width: 80%;
+			padding: 0 10% 5% 10%;
+		}
+		.lightboxfreetrial + span {
+			display: block;
+			padding: 0;
+		}
+		/* Homepage welcome
+		================================================== */
+		.rsaidboxmid {
+			width: auto;
+			background-position: right bottom;
+			padding-left: 5%;
+			min-height: 110px;
+			background-size: auto;
+		}
+		
+		/* Homepage circles
+		================================================== */
+		.mtop50 {
+			/*display: none;*/
+		}
+		.box274 {
+			width: 30%;
+		}	
+		/* Homepage numbered sections (1 - 4)
+		================================================== */
+		.ssmbox4head {
+			text-align: center;
+			margin: 0;
+		}
+		.ssmbox4head .fr {
+			float: none;
+			display: inline-block;
+		}
+		.mtop40 {
+			margin-top: 10px;
+		}
+		.mtop40 .box375  {
+			width: auto;
+			padding: 0 10%;
+		}
+		.mtop40 .box375 + div {
+			width: 40%;
+			margin: 0 5%;
+		}
+		.mtop40 .box375 + div img {
+			width: 100%;
+			height: auto;
+		}
+		.mtop40 > .box375 {
+			float: right;
+			width: 45%;
+			margin-right: 5%;
+			padding: 0;
+		}
+		.mtop40 + .mtop40 {
+			margin-top: 50px;
+		}
+		.tstibox {
+			margin: 0;
+			float: right;
+			max-width: 500px;
+			width: auto;
+		}
+		/* Homepage trial form
+		================================================== */
+		.openaccbox {
+			text-align: center;
+		}
+		.openaccbox .fr {
+			display: inline-block;
+			float: none;
+		}
+		.openaccbox .trial_form {
+			margin: auto;
+		}
+		.openaccbox .trial_form td {
+			display: inline-block;
+		}
+		.openaccbox .trial_form.form_row .oalin {
+			margin: 2px;
+		}
+		
+		/* Footer
+		================================================== */
+		.cusbox {
+			width: auto;
+		}
+		.cusbox + .clear {
+			display: none;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 768px) {
+		/* General
+		================================================== */
+		.wrapper {
+			width: 100%;
+		}
+		#main {
+			min-width: 0;
+			width: 95%;
+		}
+		.single_guide iframe, .single_guide object, .single_guide embed, .single_guide video{
+			height: 350px !important;
+		}
+		.single_guide_video{
+			background-position: center 350px;
+		}
+		/* Header
+		================================================== */
+		.header {
+			height: auto;
+		}
+		.wrapper_fixed {
+			position: relative;
+			height: auto;
+		}
+
+		.header .logo {
+			display: block;
+			margin: 15px;
+			padding: 0;
+		}
+		.header .nav {
+			display: none;
+		}
+		.header .fl {
+			display: block;
+			margin: 15px;
+		}
+		.header .logoarrow {
+			display: none;
+		}
+		.phoneicon{
+			display: none;
+		}
+		.phoneicon.phone_mobile{
+			display: inline-block;
+		}
+		.lightboxfreetrial, .freetrial_freecourse{
+			display: none;
+		}
+			
+		.lightboxfreetrial_mobile{
+			display: block;
+		}
+		.lightboxfreetrial_mobile input{
+			font-size: 19px !important;
+		}
+		/* Navigation
+		================================================== */
+		.mobile-menu {
+		}
+		.mobile-menu ul {
+			margin: 0;
+			padding: 0 15px;
+		}
+		.mobile-menu li {
+			list-style: none;
+			font-size: 180%;
+			padding: 10px;
+			width: auto;
+		}
+		.mobile-menu li + li {
+			border-top: 1px solid #ddd;
+		}
+		.mobile-menu a {
+			
+		}
+		.toggle-mobile-menu {
+			float: right;
+			display: block;
+			margin: 30px 15px 0 0;	
+			font-size: xx-large;
+			cursor: pointer;		
+		}
+		
+		/* Homepage intro
+		================================================== */
+		.slidermain {
+			width: 100%;
+		}
+		.slidermain .fl {
+			display: none;
+		}
+		.sldrtxtbox {
+			width: 80%;
+			padding: 0 10% 5% 10%;
+		}
+		.sldrtxtbox .lightboxfreetrial {
+			width: 100%;
+		}
+		.sldrtxtbox.lightboxfreetrial + span {
+			display: block;
+			padding: 0;
+		}
+		input.openaccountbtn {
+			max-width: 100%;
+			font-size: 25px;
+		}
+		/* Homepage welcome
+		================================================== */
+		.rsaidboxmid {
+			width: auto;
+			background-position: left bottom;
+			background-size: auto 192px;
+			padding: 10% 5% 192px 5%;
+			min-height: 110px;
+		}
+		
+		/* Homepage circles
+		================================================== */
+		.mtop50 {
+			display: none;
+		}
+		/* Homepage numbered sections (1 - 4)
+		================================================== */
+		.ssmbox4head {
+			margin: 0;
+		}
+		.ssmbox4head .numbg, .ssmbox4head .padtop9 {
+			float: none;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.mtop40 {
+			margin-top: 10px;
+		}
+		.mtop40 .box375  {
+			width: auto;
+			padding: 0 10%;
+		}
+		.mtop40 .box375 + div {
+			display: none;
+		}
+		.mtop40 > .fr, .mtop40 > .fl, .mtop40 > .boxcenter {
+			float: none;
+			text-align: center;
+		}
+		.mtop40 > .box375 {
+			float: none;
+			text-align: center;
+		}
+		.guidesbox .mtop40 > .box274 {
+			text-align: center;
+			/*margin: 0 auto;*/
+		}
+		.tstibox {
+			margin: 0 10px;
+			padding: 35px 30px 0 0;
+			width: auto;
+		}
+		/* Homepage trial form
+		================================================== */
+		.openaccbox {
+			text-align: center;
+		}
+		.openaccbox .fr {
+			float: none;
+		}
+		.openaccbox .trial_form {
+			margin: auto;
+		}
+		.openaccbox .trial_form td {
+			display: block;
+			text-align: center;
+		}
+		.openaccbox .trial_form.form_row .oalin {
+			margin: 2px;
+		}
+		.sldrtxtbox span {
+			padding-right: 0;
+		}
+		/* Homepage learn more & facebook
+		================================================== */
+		.learnbox {
+			display: none;
+		}
+		
+
+		/* Inner pages
+		================================================== */
+		.blue24 {
+			font-size: 30px;
+		}
+		ul.conlist {
+			margin: 20px 0;
+		}
+		.canlft {
+			display: none;
+		}
+		.canrgt {
+			width: 80%;
+			padding: 0 5%;
+		}
+		.canrgt hr {
+			margin: 0;
+		}
+		.pagehead {
+			height: auto;
+			padding: 1% 5%;
+		}
+		.canpad {
+			padding-bottom: 20px;
+		}
+		.bbox .imaborder {
+			text-align: center;
+			padding: 0 0 0 5%;
+		}
+		/* Comment form
+		================================================== */
+		.comment-respond {
+			padding: 0;
+	
+		}
+		.comment-form label {
+			float: none;
+			display: block;
+		}
+		.comment-form textarea {
+			display: block;
+			width: 90%;
+			height: 150px;
+		}
+		.comment-form .form-submit .oalbtn, .form-submit #oalbtn {
+			padding: 5px 10px;
+			margin: 0;
+		}
+
+		/* Footer
+		================================================== */
+		.footer {
+			margin-top: 87px;
+		}
+		.footlft {
+			width: 100%;
+		}
+		.cusbox {
+			display: none;
+		}
+		.cusbox + .clear {
+			display: none;
+		}
+		
+		.single_guide {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 600px) {
+		.backdropfreetrial {
+			position: fixed;
+			left: 0;
+			right: 0;
+			width: 100%;
+		}
+		.canrgt .fl, .canrgt .fr {
+			float: none;
+		}
+		.canrgt .bbox .fl, .canrgt  .bbox .fr {
+			float: right;
+		}
+		.single_guide iframe, .single_guide object, .single_guide embed, .single_guide video{
+			height: 300px !important;
+		}
+		.single_guide_video{
+			background-position: center 300px;
+			margin-bottom: 10px;
+		}
+		a.back_to_guides {
+			display: block;
+			float: none;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+		.single_guide_title {
+			margin: 0 auto;
+		}
+		.guide_nav.fr, .guide_nav.fl{
+			float: none;
+			margin: 0 auto 15px;
+		}
+		.guide_nav.fr{
+			right: -13px;
+		}
+		.guide_nav.fl{
+			left: -13px;
+		}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		/* Header
+		================================================== */
+		.header {
+			height: auto;
+		}
+		.wrapper_fixed {
+			height: auto;
+		}
+		.header .logo {
+			display: block;
+			margin: 10px auto;
+			float: none;
+			text-align: center;
+		}
+		.header .fl {
+			display: block;
+			margin: 10px auto;
+			float: none;
+			text-align: center;
+		}
+		.header .fl .textwidget {
+			display: inline-block;
+			margin-right: 20px;
+		}
+		.phoneicon.phone_mobile {
+			display: inline-block;
+		}
+		.headlink {
+			display: inline-block;
+			border-bottom: none;
+		}
+		.rsaidboxmid h2 {
+			font-size: 32px;
+			letter-spacing: -1px;
+		}
+		/* Navigation
+		================================================== */
+		.toggle-mobile-menu {
+			margin: 15px 25px 0 -40px;	
+		}
+		/* Blog navigation
+		================================================== */
+		ul.tablist {
+			padding: 0 0 5px !important;
+		}
+		ul.tablist li {
+			background: none;
+			display: block;
+			text-align: center;
+			float: none;
+			padding: 10px;
+		}
+		ul.tablist li + li {
+			border-top: 1px solid #fff;
+		}
+		ul.tablist li:hover {
+			background: #fff;
+		}
+		ul.tablist li a {
+			border: none;
+		}
+		/* Inner pages
+		================================================== */
+		ul.tablist li.activetab_item {
+			background: #fff;
+		}
+		ul.tablist a.activetab {
+			background: none;
+			border-top: none;
+		}
+		/* Prices page
+		================================================== */
+		.pibox {
+			float: none;
+			margin: 0 auto 20px;
+		}
+		.blue35 {
+			word-wrap: break-word;
+		}
+		.tablebox td {
+			font-size: 16px;
+		}
+		strong.blue24 {
+			display: block;
+		}
+		/* Contact page
+		================================================== */
+		.oalin-textarea, .oalin {
+			width: 90%!important;
+			margin: 0 auto;
+			display: block;	
+		}
+		input.oalbtn-contact {
+			width: 96% !important;
+			margin: 0 auto;
+			padding: 8px 0;
+			display: block;	
+		}
+		.single_guide iframe, .single_guide object, .single_guide embed, .single_guide video{
+			height: 250px !important;
+		}
+		.single_guide_video{
+			background-position: center 250px;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
